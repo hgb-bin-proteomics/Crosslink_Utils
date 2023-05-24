@@ -9,6 +9,36 @@
 __version = "1.0.0"
 __date = "2023-05-24"
 
+"""
+DESCRIPTION:
+A script to find the shortest cross-linked residue pair / crosslink for a list
+of crosslinks exported from pyXlinkViewer.
+USAGE:
+find_shortest.py f [f]
+                   [-c CHAINS]
+                   [-z]
+                   [-t DISTANCE]
+                   [-o OUTPUT]
+                   [-h]
+                   [--version]
+positional arguments:
+  f                     Crosslinks exported from pyXlinkViewer in csv format.
+optional arguments:
+  -c CHAINS, --equal-chains CHAINS
+                        Chains that should be considered equal because they have
+                        the same sequence. E.g. AB, CD if A and B are the same
+                        protein and C and D are the same protein.
+  -z, --allow-zeros
+                        Allow zero length crosslinks.
+  -t DISTANCE, --threshold DISTANCE
+                        Threshold (float) that specifies if a crosslink
+                        satisfies the crosslinker-specific distance constraint.
+  -o OUTPUT, --output OUTPUT
+                        Prefix of the output file.
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+"""
+
 # requirements
 # pip install pandas
 
