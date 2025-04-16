@@ -6,6 +6,7 @@ Helper scripts for crosslink analysis.
 
 - Python 3.10+
 - Packages as specified in [requirements.txt](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/requirements.txt): `pip install -r requirements.txt`
+- Or what is specified in the specific sub-directories!
 
 ## `find_shortest.py`
 
@@ -15,16 +16,26 @@ Helper scripts for crosslink analysis.
   ```
   python find_shortest.py data/pyXlinkViewer_export.py -c AB,CD -t 27.0
   ```
+## MS Annika MS1 Error
+
+An example implementation of calculating the MS1 Error for CSMs from [MS Annika](https://github.com/hgb-bin-proteomics/MSAnnika).
+
+See notebook here: [ms1_error.ipynb](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/01_MSAnnika_MS1_Error/ms1_error.ipynb)
+
+## Proteome Discoverer Result File Reader
+
+Automatically read in results from a
+[Proteome Discoverer](https://www.thermofisher.com/at/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/multi-omics-data-analysis/proteome-discoverer-software.html)
+study and combine metrics
+into a single table. In this example illustrated by reading numbers of peptide spectrum
+matches, crosslink spectrum matches and crosslinks.
+
+- Jupyter notebook: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.ipynb)
+- Python script: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.py)
 
 ## Citing
 
-If you are using scripts of this repository please cite:
-```
-MS Annika 2.0 Identifies Cross-Linked Peptides in MS2–MS3-Based Workflows at High Sensitivity and Specificity
-Micha J. Birklbauer, Manuel Matzinger, Fränze Müller, Karl Mechtler, and Viktoria Dorfer
-Journal of Proteome Research 2023 22 (9), 3009-3021
-DOI: 10.1021/acs.jproteome.3c00325
-```
+If you are using scripts of this repository please cite [MS Annika](https://github.com/hgb-bin-proteomics/MSAnnika).
 
 ## License
 
