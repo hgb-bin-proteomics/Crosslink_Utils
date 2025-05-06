@@ -32,6 +32,7 @@ matches, crosslink spectrum matches and crosslinks.
 
 - Jupyter notebook: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.ipynb)
 - Python script: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.py)
+- R script (minimal): [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.R)
 
 ## Citing
 
