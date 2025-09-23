@@ -14,6 +14,7 @@
 
 from Bio import SeqIO
 
+
 def fasta_filter(fasta_file: str) -> str:
     records = list()
     for record in SeqIO.parse(fasta_file, "fasta"):
@@ -33,13 +34,15 @@ def fasta_filter(fasta_file: str) -> str:
             pass
     records_to_write = list(unique_records.values())
     SeqIO.write(records_to_write, f"{fasta_file}_unique_seq_no_X.fasta", "fasta")
-    print(f"Filtered out {len(records) - len(records_to_write)} sequences because of duplicate or ambiguous sequences!")
+    diff = len(records) - len(records_to_write)
+    print(f"Filtered out {diff} sequences because of duplicate or ambiguous sequences!")
     print(f"Filtered fasta file contains {len(records_to_write)} sequences!")
     print(f"Wrote fasta file with name {fasta_file}_unique_seq_no_X.fasta!")
-    print(f"Finished successfully!")
+    print("Finished successfully!")
     return f"{fasta_file}_unique_seq_no_X.fasta"
 
 
 if __name__ == "__main__":
     import sys
+
     _ = fasta_filter(sys.argv[1])
