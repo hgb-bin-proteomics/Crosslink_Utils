@@ -5,8 +5,8 @@ and writes a new FASTA file with suffix `"_unique_seq_no_X.fasta"`.
 
 ## Usage
 
-Requires [python]()!
+Requires [python](https://www.python.org/downloads/)!
 
-- Install [uv]()
+- Install [uv](https://docs.astral.sh/uv/)
 
 ## Impl done, TODO: finish readme
