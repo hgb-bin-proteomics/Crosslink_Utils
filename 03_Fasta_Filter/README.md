@@ -16,7 +16,7 @@ Requires [python](https://www.python.org/downloads/) or **recommended** [uv](htt
   ```bash
   uv run fasta_filter.py ecoli_human.fasta
   ```
-- The script will display how many sequences are filtered out and write a new FASTA file with name `{your_fasta_file.fasta}_unique_seq_no_X.fasta` that without the filtered out proteins.
+- The script will display how many sequences are filtered out and write a new FASTA file with name `{your_fasta_file.fasta}_unique_seq_no_X.fasta` without the filtered out proteins.
 - From the above example you would get a new file named: `ecoli_human.fasta_unique_seq_no_X.fasta`
 
 ## Contact
