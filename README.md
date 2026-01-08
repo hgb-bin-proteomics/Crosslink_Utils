@@ -34,6 +34,21 @@ matches, crosslink spectrum matches and crosslinks.
 - Python script: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.py)
 - R script (minimal): [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/blob/master/02_pdResult_Reader/pdresult_reader.R)
 
+## Fasta Filter
+
+Filters out duplicate proteins and proteins with ambiguous sequences (e.g. containing amino acid letter code `"X"`) from a FASTA file
+and writes a new FASTA file with suffix `"_unique_seq_no_X.fasta"`.
+
+More information: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/tree/master/03_Fasta_Filter)
+
+## \[Diagnostic\] Ion Finder
+
+Counts in how many mass spectra the specified m/z values appear (e.g. to find diagnostic ions). Mass spectra should be given
+in `.mgf` format. Masses should be given in a single `.txt` file with one mass per line. The script simply matches the masses
+to the m/z array of every mass spectrum. No deisotoping or deconvolution is performed.
+
+More information: [see here](https://github.com/hgb-bin-proteomics/Crosslink_Utils/tree/master/04_%5BDiagnostic%5D_Ion_Finder)
+
 ## Citing
 
 If you are using scripts of this repository please cite [MS Annika](https://github.com/hgb-bin-proteomics/MSAnnika).
